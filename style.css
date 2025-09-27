@@ -16,6 +16,7 @@ header {
     display:block;
     align-content: center;
     
+    
 }
 
 .producto {display:inline-block;
@@ -35,7 +36,8 @@ header {
 .botonwhatsapp{width:50px; height:50px; 
     background-size:100% 100%; border:1px;
     border-radius:10px;
-    background-image:url("Whatsapp icon.png");}
+    background-color:#cccccc88;
+    background-image:url("whatsapp icon.png");}
 
 footer {
     text-align: center;
@@ -62,7 +64,64 @@ footer {
     top:20px;
     right:10px;
 }
+
 .botonmenuper img{
     width:60px;
     border-radius:10px;
+}
+.iconmenumenu{
+    position:absolute;
+    top:6px;
+    right:10px;
+    width:40px;
+    border-radius:6px;
+}
+
+#menudiv{
+    transition-duration:25ms;
+    position:fixed;
+    top:0px;
+    right:0px;
+    margin:0px;
+    padding:0px;
+    width:74%;
+    height:100%;
+    background-color:#222266f8;
+    text-align:right;
+    z-index:10;
+}
+#menudiv a,b{
+    text-decoration:none;
+    font-size:16px;
+    background-color:#00000066;
+    color:#fff;
+    padding:6px;
+    margin-top:3px;
+    border-radius:3px;
+    display:inline-block;
+}
+#menudiv h3{text-align:center;
+    font-size:20px;
+    background-color:#fff;
+    color:#555;
+    padding:12px;
+    margin-top:0px;
+}
+.selectionproductdiv{
+    width:100%;
+    height:50px;
+    background-color:#ccc;
+    overflow:auto;
+    display:inline-flex;
+    margin-top:5px;
+}
+.selectionproductdiv button{
+    padding:0px 3px;
+    min-height:50px;
+    max-width:150px;
+    background-color:white;
+    font-family:calibri;
+    font-size:12px;
+    border:1px solid gray;
+    display:inline-block;
 }

@@ -6,45 +6,38 @@
     <link rel="stylesheet" href="style.css">
     <title>Tienda de Productos</title>
 </head>
-<body>
+<body onload="bodyload()">
     <header>
         <img src="iconogeupowhats.jpeg" class="icongroupwhats">
-        <div class="botonmenuper"><img src="icono de menu.png" style="background:#00000011;"></div>
+        <div class="botonmenuper"><img src="icono de menu.png" onclick="openmenu()" style="background:#00000011;"></div>
         <h2 class="tituloper">Tienda de Productos<br>El Centro-GASPAR</h2>
     </header>
-    Atencion!<br>Esta Pagina aun esta en desarrollo.
-   
+    <div id="menudiv" style="display:none; opacity:0;">
+        <h3>Menú</h3>
+        <img src="icono de menu.png" onclick="closemenu()" class="iconmenumenu">
+        <a href="">Ir a la pagina Inicio</a>
+        <hr>
+        <center><h4 style="color:white; margin:5px;">Categorias</h4></center>
+        <b onclick="alimentosycondimentos()">Alimentos y Condimentos</b>
+        <b onclick="aseoylimpiesa()">Aseo y limpiesa</b>
+        <b onclick="bebidasycigarros()">Bebidas y Cigarros</b>
+        <b></b>
+        <b></b>
+        <hr>
+        <a href="infopage.html">Información</a>
+        <hr>
+<input class="botonwhatsapp" type="button" onclick="whatsappmensaje()">
+
+        </div>
         <section id="productos">
-            <h2>Productos Disponibles</h2>
-            <center><div id="divproductos">
-                <div class="producto">
-                    <h3>Pasta de Tomate</h3>
-                    <img src="Pasta de tomate.jpg">
-    <p>Precio: $500</p>
-    <p>La Pasta de Tomate Marwa 400g es el aliado ideal para tus recetas, ofreciendo un concentrado de sabor intenso y natural gracias a sus tomates seleccionados. Su práctico envase de 400 gramos asegura que cada porción mantenga su frescura, permitiéndote disfrutar de salsas y guisos irresistibles. Perfecta para pizzas, pastas, sopas y platos tradicionales, la calidad Marwa transforma tus comidas en auténticas delicias. ¡No te quedes sin ella en tu cocina!</p>
-                        <input class="botonwhatsapp" type="button" onclick="whatsappmensaje()">
-                </div>
-                <div class="producto">
-                    <h3>Leche Condensada</h3>
-                    <img src="Leche Condensada La Granjera.jpg">
-    <p>Precio: $520</p>
-    <p>Endulza tus postres y recetas favoritas con la deliciosa Leche Condensada La Granjera. Su textura cremosa y sabor irresistible la convierten en el complemento perfecto para cualquier ocasión.
-
-Características:
-
-Hecha con leche de alta calidad.
-Ideal para postres, bebidas, y decoraciones.
-Textura suave y consistencia perfecta.
-Presentación práctica para facilitar su uso.<br>• Ingredientes: Azúcar, agua, aceite de palma, leche en polvo, estabilizadores ( carragenina y fosfato disódico), emulsionante (lecitina de soja). Consumir preferentemente antes de los 210 días.</p>
-                        <input class="botonwhatsapp" type="button" onclick="whatsappmensaje()">
-                </div>
-                
-                
-            </div></center>
+            <h2 id="titulotipodeproducto" style="margin:10px;">Que tipo de productos busca usted?
+            <br>Accede al menú para buscar el producto deseado dentro de su categoria.</h2>
+            <object id="pagecategoriesproduct" type="text/html" data="portadaprincipal.html" width="100%" height="600px" style="overflow:auto;"> </object>
         </section>
     
-    <br>
+    
     <footer>
+    Atencion!<br>Esta Pagina aun esta en desarrollo.
         <p>&copy; 2025 Tienda de Productos</p>
     </footer>
 
